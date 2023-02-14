@@ -70,7 +70,7 @@ interests = [
     (8, "neural networks"), (8, "deep learning"), (8, "Big Data"), (8, "artificial intelligence"),
     (9, "Hadoop"), (9, "Java"), (9, "MapReduce"), (9, "Big Data")
 ]
-
+# Пользователи, сгрупированные по интересам
 users_by_interests = {}
 for id, interest in interests:
     if interest not in users_by_interests:
@@ -80,6 +80,7 @@ for id, interest in interests:
 # print(users_by_interests)
 # {'Hadoop': [0, 9], 'Big Data': [0, 8, 9], 'HBase': [0, 1], 'Java': [0, 5, 9], 'Spark': [0], 'Storm': [0], 'Cassandra': [0, 1], 'NoSQL': [1], 'MongoDB': [1], 'Postgres': [1], 'Python': [2, 3, 5], 'scikit-learn': [2, 7], 'scipy': [2], 'numpy': [2], 'statsmodels': [2], 'pandas': [2], 'R': [3, 5], 'statistics': [3, 6], 'regression': [3, 4], 'probability': [3, 6], 'machine learning': [4, 7], 'decision trees': [4], 'libsvm': [4], 'C++': [5], 'Haskell': [5], 'programming languages': [5], 'mathematics': [6], 'theory': [6], 'Mahout': [7], 'neural networks': [7, 8], 'deep learning': [8], 'artificial intelligence': [8], 'MapReduce': [9]}
 
+# Интересы, сгрупированные по пользователям
 interests_by_users = {}
 for id, interest in interests:
     if id not in interests_by_users:
@@ -90,12 +91,12 @@ for id, interest in interests:
 # {0: ['Hadoop', 'Big Data', 'HBase', 'Java', 'Spark', 'Storm', 'Cassandra'], 1: ['NoSQL', 'MongoDB', 'Cassandra', 'HBase', 'Postgres'], 2: ['Python', 'scikit-learn', 'scipy', 'numpy', 'statsmodels', 'pandas'], 3: ['R', 'Python', 'statistics', 'regression', 'probability'], 4: ['machine learning', 'regression', 'decision trees', 'libsvm'], 5: ['Python', 'R', 'Java', 'C++', 'Haskell', 'programming languages'], 6: ['statistics', 'probability', 'mathematics', 'theory'], 7: ['machine learning', 'scikit-learn', 'Mahout', 'neural networks'], 8: ['neural networks', 'deep learning', 'Big Data', 'artificial intelligence'], 9: ['Hadoop', 'Java', 'MapReduce', 'Big Data']}
 
 from collections import Counter
-def recommendant_friend_by_interests(target_user):
+def recommendation_friends_by_interests(target_user):
     same_interests = Counter (user for interest in interests_by_users[target_user['id']] for user in users_by_interests[interest] if user != target_user['id'])
     # возвращает список в формате (id пользователя, количество общих интересов)
     return same_interests.most_common()
 
-# print(recommendant_friend_by_interests(users[0]))
+# print(recommendation_friends_by_interests(users[0]))
 # [(9, 3), (1, 2), (8, 1), (5, 1)]
 # Следовательно, по интересам пользователю 0 подходит больше всего пользователь 9.
 # У них 3 общих интереса - Hadoop, Big Data и Java.
