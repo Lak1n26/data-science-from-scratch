@@ -6,3 +6,4 @@
 05. [Наивная байесовская классификация](https://github.com/Lak1n26/data-science-from-scratch/blob/main/Scikit-Learn/Learning%20Sklearn%205.ipynb)
 06. [Линейная регрессия, регуляризация](https://github.com/Lak1n26/data-science-from-scratch/blob/main/Scikit-Learn/Learning%20Sklearn%206.ipynb)
 07. [Пример: предсказание велосипедного трафика](https://github.com/Lak1n26/data-science-from-scratch/blob/main/Scikit-Learn/Learning%20Sklearn%207.ipynb)
+08. [Метод опорных векторов](https://github.com/Lak1n26/data-science-from-scratch/blob/main/Scikit-Learn/Learning%20Sklearn%208.ipynb)
