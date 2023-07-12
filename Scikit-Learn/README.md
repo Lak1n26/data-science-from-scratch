@@ -8,3 +8,4 @@
 07. [Пример: предсказание велосипедного трафика](https://github.com/Lak1n26/data-science-from-scratch/blob/main/Scikit-Learn/Learning%20Sklearn%207.ipynb)
 08. [Метод опорных векторов](https://github.com/Lak1n26/data-science-from-scratch/blob/main/Scikit-Learn/Learning%20Sklearn%208.ipynb)
 09. [Деревья решений и случайные леса](https://github.com/Lak1n26/data-science-from-scratch/blob/main/Scikit-Learn/Learning%20Sklearn%209.ipynb)
+10. [Метод главный компонент (PCA)](https://github.com/Lak1n26/data-science-from-scratch/blob/main/Scikit-Learn/Learning%20Sklearn%2010.ipynb)
