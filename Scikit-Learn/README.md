@@ -11,3 +11,4 @@
 10. [Метод главный компонент (PCA)](https://github.com/Lak1n26/data-science-from-scratch/blob/main/Scikit-Learn/Learning%20Sklearn%2010.ipynb)
 11. [Кластеризация методом k-средних](https://github.com/Lak1n26/data-science-from-scratch/blob/main/Scikit-Learn/Learning%20Sklearn%2011.ipynb)
 12. [Смеси Гауссовых распределений (GMM)](https://github.com/Lak1n26/data-science-from-scratch/blob/main/Scikit-Learn/Learning%20Sklearn%2012.ipynb)
+13. [Ядерная оценка плотности распределения](https://github.com/Lak1n26/data-science-from-scratch/blob/main/Scikit-Learn/Learning%20Sklearn%2013.ipynb)
